@@ -10,13 +10,13 @@
     <Company>Kloc Limited Company</Company>
     <Description>Extension methods to expose lists, collections, and dictionaries as read only.
 
-`IList&lt;T&gt;.AsReadOnly()`
-`IDictionary&lt;TKey,TValue&gt;.AsReadOnly()`
-`ICollection&lt;T&gt;.AsReadOnly()`</Description>
+IList&lt;T&gt;.AsReadOnly()
+ICollection&lt;T&gt;.AsReadOnly()
+IDictionary&lt;TKey,TValue&gt;.AsReadOnly()</Description>
     <PackageLicenseUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions</RepositoryUrl>
-    <PackageTags>System, Generic, Readonly, Lists, Dictionaries, Collections</PackageTags>
+    <PackageTags>System, Generic, Read Only, ReadOnlyCollections, Lists, Dictionaries, Collections</PackageTags>
     <PackageId>ReadOnlyExtensions</PackageId>
   </PropertyGroup>
 
