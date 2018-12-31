@@ -9,7 +9,9 @@ Extensions to expose lists, collections, and dictionaries as read-only.
 `dotnet add package ReadOnlyExtensions`
 
 ## How to Use
-Simply call `AsReadOnly()` on any collection that implements `IList<T>`, `ICollection<T>`, or `IDictionary<TKey,TValue>`.
+Simply call `AsReadOnly()` on any collection that implements `IList<T>`, `ICollection<T>`, `IDictionary<TKey,TValue>`, or `IEnumerable<T>`.
+
+> Enumerables are technically already read-only, but if the underlying collection is not read-only—casting can be used to alter it.
 
 ```csharp
 var myReadOnlyList = myList.AsReadOnly();
