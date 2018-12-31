@@ -20,7 +20,7 @@ IEnumerable&lt;T&gt;.AsReadOnly()</Description>
     <PackageTags>system generic read only list lists dictionary dictionaries collection collections readonly readonlycollections readonlyextensions</PackageTags>
     <PackageId>ReadOnlyExtensions</PackageId>
     <Product>ReadOnlyExtensions</Product>
-    <PackageReleaseNotes>Added an extension to expose and enumerable as read-only. This will prevent casting if the underlying collection can be altered.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added an extension to expose enumerables as read-only. This will prevent casting if the underlying collection can be altered.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
