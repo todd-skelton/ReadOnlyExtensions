@@ -1,7 +1,21 @@
 # ReadOnlyExtensions
 Expose generic collections as read only interfaces with simple extensions.
 
+## Installation
+
+### Package Manager
+`Install-Package ReadOnlyExtensions`
+
+### .NET CLI
+`dotnet add package ReadOnlyExtensions`
+
 ## How to Use
+Simply call `AsReadOnly()` on any collection that implements `IList<T>`, `ICollection<T>`, or `IDictionary<TKey,TValue>`.
+
+```csharp
+	var myReadOnlyList = myList.AsReadOnly();
+```
+
 Typically you would expose a read-only collection where the class will manage the state internally.
 
 ```csharp
