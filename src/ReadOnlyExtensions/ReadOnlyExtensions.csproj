@@ -4,6 +4,19 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>System.Collections.Generic.ReadOnlyExtensions</AssemblyName>
     <RootNamespace>System.Collections.Generic.ReadOnlyExtensions</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>Todd Skelton</Authors>
+    <Company>Kloc Limited Company</Company>
+    <Description>Extension methods to wrap generic interfaces for lists, collections, dictionaries and expose them as read only.
+
+`IList&lt;T&gt;.AsReadOnly()`
+`IDictionary&lt;TKey,TValue&gt;.AsReadOnly()`
+`ICollection&lt;T&gt;.AsReadOnly()`</Description>
+    <PackageLicenseUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xKloc/System.Collections.Generic.ReadOnlyExtensions</RepositoryUrl>
+    <PackageTags>System, Generic, Readonly, Lists, Dictionaries, Collections</PackageTags>
   </PropertyGroup>
 
 </Project>
