@@ -1,4 +1,4 @@
-﻿namespace System.Collections.Generic.ReadOnlyExtensions.Internal
+﻿namespace System.Collections.Generic.Internal
 {
     internal class ReadOnlyListWrapper<T> : IReadOnlyList<T>
     {

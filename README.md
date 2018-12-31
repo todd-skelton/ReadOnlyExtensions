@@ -1,17 +1,16 @@
-# System.Collections.Generic.ReadOnlyExtensions
-Extension methods to wrap generic collections and expose them as read only.
+# ReadOnlyExtensions
+Expose generic collections as read only interfaces with simple extensions.
 
 ## How to Use
-
 Typically you would expose a read-only collection where the class will manage the state internally.
 
 ```csharp
 public class MyClass
 {
-    // internal list that can be manipulated
+    // private list that can be manipulated
     private readonly IList<Item> _items = new List<Item>();
 
-    // exposed list that is read only
+    // public list that is read only
     public IReadOnlyList<Item> Items => _items.AsReadOnly();
 
     public void AddItem(Item item)
@@ -29,10 +28,10 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    // internal dictionary that can be manipulated
+    // private dictionary that can be manipulated
     private readonly IDictionary<int, Item> _items = new Dictionary<int, Item>();
 
-    // exposed dictionary that is read only
+    // public dictionary that is read only
     public IReadOnlyDictionary<int, Item> Items => _items.AsReadOnly();
 
     public void AddItem(Item item)
@@ -50,10 +49,10 @@ public class MyClass
 ```csharp
 public class MyClass
 {
-    // internal collection that can be manipulated
+    // private collection that can be manipulated
     private readonly ICollection<Item> _items = new HashSet<Item>();
 
-    // exposed collection that is read only
+    // public collection that is read only
     public IReadOnlyCollection<Item> Items => _items.AsReadOnly();
 
     public void AddItem(Item item)
