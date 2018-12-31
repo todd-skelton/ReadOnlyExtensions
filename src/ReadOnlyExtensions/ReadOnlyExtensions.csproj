@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>System.Collections.Generic.ReadOnlyExtensions</AssemblyName>
+    <RootNamespace>System.Collections.Generic.ReadOnlyExtensions</RootNamespace>
+  </PropertyGroup>
+
+</Project>
