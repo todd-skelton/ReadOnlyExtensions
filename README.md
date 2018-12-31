@@ -1,8 +1,7 @@
 # ReadOnlyExtensions
-Expose generic collections as read only interfaces with simple extensions.
+Extensions to expose lists, collections, and dictionaries as read-only.
 
 ## Installation
-
 ### Package Manager
 `Install-Package ReadOnlyExtensions`
 
