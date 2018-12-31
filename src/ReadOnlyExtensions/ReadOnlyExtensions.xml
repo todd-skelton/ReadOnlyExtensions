@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReadOnlyExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.Collections.Generic.ReadOnlyExtensions">
+            <summary>
+            Extension methods to expose collections as read-only.
+            </summary>
+        </member>
+        <member name="M:System.Collections.Generic.ReadOnlyExtensions.AsReadOnly``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Exposes a list as read-only.
+            </summary>
+            <typeparam name="T">The type of elements in the list.</typeparam>
+            <param name="source">The source list that will be exposed as read-only.</param>
+            <returns>The exposed read-only list.</returns>
+        </member>
+        <member name="M:System.Collections.Generic.ReadOnlyExtensions.AsReadOnly``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Exposes a collection as read-only.
+            </summary>
+            <typeparam name="T">The type of elements in the collection.</typeparam>
+            <param name="source">The source collection that will be exposed as read-only.</param>
+            <returns>The exposed read-only collection.</returns>
+        </member>
+        <member name="M:System.Collections.Generic.ReadOnlyExtensions.AsReadOnly``2(System.Collections.Generic.IDictionary{``0,``1})">
+            <summary>
+            Exposes a dictionary as read-only.
+            </summary>
+            <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
+            <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+            <param name="source">The source dictionary that will be exposed as read-only.</param>
+            <returns>The exposed read-only dictionary.</returns>
+        </member>
+        <member name="M:System.Collections.Generic.ReadOnlyExtensions.AsReadOnly``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Exposes an enumerable as read-only to prevent casting.
+            </summary>
+            <typeparam name="T">The type of elements in the enumerable.</typeparam>
+            <param name="source">The source enumerable that will be exposed as read-only.</param>
+            <returns>The exposed read-only enumerable.</returns>
+        </member>
+    </members>
+</doc>
