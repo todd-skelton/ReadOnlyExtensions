@@ -6,7 +6,7 @@
 
         internal ReadOnlyCollectionWrapper(ICollection<T> source)
         {
-            _source = source;
+            _source = source ?? throw new ArgumentNullException(nameof(source));
         }
 
         public int Count => _source.Count;

@@ -6,7 +6,7 @@
 
         internal ReadOnlyDictionaryWrapper(IDictionary<TKey, TValue> source)
         {
-            _source = source;
+            _source = source ?? throw new ArgumentNullException(nameof(source));
         }
 
         public TValue this[TKey key] => _source[key];

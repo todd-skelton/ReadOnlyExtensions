@@ -6,7 +6,7 @@
 
         internal ReadOnlyListWrapper(IList<T> source)
         {
-            _source = source;
+            _source = source ?? throw new ArgumentNullException(nameof(source));
         }
 
         public T this[int index] => _source[index];
