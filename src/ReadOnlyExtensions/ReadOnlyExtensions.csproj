@@ -5,21 +5,22 @@
     <AssemblyName>ReadOnlyExtensions</AssemblyName>
     <RootNamespace>System.Collections.Generic;</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>Todd Skelton</Authors>
     <Company>Kloc Limited Company</Company>
-    <Description>Extensions to expose lists, collections, and dictionaries as read-only.
+    <Description>Extensions to expose lists, collections, dictionaries, and enumerables as read-only.
 
 IList&lt;T&gt;.AsReadOnly()
 ICollection&lt;T&gt;.AsReadOnly()
-IDictionary&lt;TKey,TValue&gt;.AsReadOnly()</Description>
+IDictionary&lt;TKey,TValue&gt;.AsReadOnly()
+IEnumerable&lt;T&gt;.AsReadOnly()</Description>
     <PackageLicenseUrl>https://github.com/xKloc/ReadOnlyExtensions/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/xKloc/ReadOnlyExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xKloc/ReadOnlyExtensions</RepositoryUrl>
     <PackageTags>system generic read only list lists dictionary dictionaries collection collections readonly readonlycollections readonlyextensions</PackageTags>
     <PackageId>ReadOnlyExtensions</PackageId>
     <Product>ReadOnlyExtensions</Product>
-    <PackageReleaseNotes>Update documentation</PackageReleaseNotes>
+    <PackageReleaseNotes>Added an extension to expose and enumerable as read-only. This will prevent casting if the underlying collection can be altered.</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

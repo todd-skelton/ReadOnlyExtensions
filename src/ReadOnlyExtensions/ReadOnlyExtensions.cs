@@ -29,5 +29,12 @@ namespace System.Collections.Generic
         /// <param name="source">The source dictionary that will be exposed as read-only.</param>
         /// <returns>The exposed read-only dictionary.</returns>
         public static IReadOnlyDictionary<TKey, TValue> AsReadOnly<TKey, TValue>(this IDictionary<TKey, TValue> source) => source is null ? null : new ReadOnlyDictionaryWrapper<TKey, TValue>(source);
+        /// <summary>
+        /// Exposes an enumerable as read-only to prevent casting.
+        /// </summary>
+        /// <typeparam name="T">The type of elements in the enumerable.</typeparam>
+        /// <param name="source">The source enumerable that will be exposed as read-only.</param>
+        /// <returns>The exposed read-only enumerable.</returns>
+        public static IEnumerable<T> AsReadOnly<T>(this IEnumerable<T> source) => source is null ? null : new ReadOnlyEnumerableWrapper<T>(source);
     }
 }
