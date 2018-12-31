@@ -1,5 +1,5 @@
 # ReadOnlyExtensions
-Extensions to expose lists, collections, and dictionaries as read-only.
+Extensions to expose lists, collections, dictionaries, and enumerables as read-only.
 
 ## Installation
 ### Package Manager
