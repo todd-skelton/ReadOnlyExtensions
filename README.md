@@ -1,3 +1,5 @@
+[![](https://img.shields.io/nuget/v/ReadOnlyExtensions.svg)](https://www.nuget.org/packages/ReadOnlyExtensions)
+
 # ReadOnlyExtensions
 Extensions to expose lists, collections, dictionaries, and enumerables as read-only.
 
